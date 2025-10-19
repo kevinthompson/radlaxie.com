@@ -1,0 +1,50 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const questions = [
+  {
+    title: "Do I need experience?",
+    description:
+      "No experience is required. You will learn to play through practices and tournament participation.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "When will we practice?",
+    description:
+      "Practices are held in the weeks leading up to a tournament, and periodically between tournaments.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "What equipment will I need?",
+    description:
+      "You'll need a stick, goggles, mouthguard, cleats and athletic wear. We'll provide you with a jersey.",
+    icon: "bx:bxs-data",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Frequently Asked Questions
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    If you have more questions, email coach Trout at <a href="mailto:ntrout77@gmail.com" rel="nofollow">ntrout77@gmail.com</a>
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    questions.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
