@@ -7,19 +7,19 @@ const questions = [
     title: "Do I need experience?",
     description:
       "No experience is required. You will learn to play through practices and tournament participation.",
-    icon: "bx:bxs-briefcase",
+    icon: "bx:bxs-message-rounded",
   },
   {
     title: "When will we practice?",
     description:
       "Practices are held in the weeks leading up to a tournament, and periodically between tournaments.",
-    icon: "bx:bxs-window-alt",
+    icon: "bx:bxs-message-rounded",
   },
   {
     title: "What equipment will I need?",
     description:
       "You'll need a stick, goggles, mouthguard, cleats and athletic wear. We'll provide you with a jersey.",
-    icon: "bx:bxs-data",
+    icon: "bx:bxs-message-rounded",
   },
 ];
 ---
@@ -28,8 +28,8 @@ const questions = [
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
     Frequently Asked Questions
   </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    If you have more questions, email coach Trout at <a href="mailto:ntrout77@gmail.com" rel="nofollow">ntrout77@gmail.com</a>
+  <p class="text-lg mt-4 text-slate-400">
+    If you have more questions, email coach Trout at <a href="mailto:ntrout77@gmail.com" rel="nofollow" class="text-teal">ntrout77@gmail.com</a>
   </p>
 </div>
 
@@ -37,12 +37,12 @@ const questions = [
   {
     questions.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+        <div class="bg-black rounded-full  p-2 w-8 h-8 shrink-0">
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+          <h3 class="font-semibold text-lg text-teal">{item.title}</h3>{" "}
+          <p class="text-slate-300 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>
     ))

@@ -7,7 +7,8 @@
     Lato, ui-sans-serif,
     system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
-  --color-black: oklch(29.3% 0.066 243.157);
+  --color-black: #0f1c24;
+  --color-teal: #68B7DD;
 }
 
 /*
