@@ -2,11 +2,10 @@
 import Link from "@/components/ui/link.astro";
 import { FORM_URL } from "@/constants";
 import { Icon } from "astro-icon/components";
-import { Image } from "astro:assets";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-4 pb-4 md:pt-12 md:pb-24">
+  class="grid md:grid-cols-2 place-items-center pt-4 pb-4 md:pt-12 md:pb-24">
   <div class="py-6 md:order-1 hidden md:block"></div>
   <div>
     <h1 class="text-5xl lg:text-6xl xl:text-7xl font-black uppercase">
@@ -15,14 +14,14 @@ import { Image } from "astro:assets";
     <p class="text-lg lg:text-xl xl:text-2xl mt-4 text-teal max-w-xl uppercase">
       Join the middle school tournament team
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+    <div class="mt-6 flex flex-col md:flex-row gap-3">
       <Link
         href={FORM_URL}
         target="_blank"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
         <Icon class="text-white w-5 h-5" name="bx:bxs-edit" />
-        Sign up now
+        Sign up now!
       </Link>
     </div>
   </div>
